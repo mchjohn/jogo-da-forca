@@ -2,6 +2,44 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
+}
+
+.moon {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-image: radial-gradient(rgb(87, 86, 85), rgb(133, 131, 130), rgb(255, 255, 255));
+    position: absolute;
+    margin: 5px;
+}
+
+.hole {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.1), rgb(105, 104, 104, 0.1));
+    position: relative;
+    border-radius: 60%;
+}
+
+.hole-sm {
+    width: 75px;
+    height: 60px;
+}
+
+.hole-1 {
+    top: 40px;
+    left: 130px;
+}
+
+.hole-2 {
+    top: 80px;
+    left: 10px;
+}
+
+.hole-lg {
+    width: 80px;
+    height: 55px;
+    top: 60px;
+    left: 120px;
 }
 
 .container {
@@ -9,6 +47,22 @@
     left: 10px;
     position: relative;
     width: 90%;
+}
+
+body {
+    width: 350px;
+    height: 580px;
+    
+    background: rgba(15,29,29,1);
+    background: -moz-linear-gradient(top, rgba(15,29,29,1) 0%, rgba(25,46,47,1) 50%, rgba(32,67,63,1) 71%, rgba(32,67,63,1) 71%, rgba(35,71,71,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(15,29,29,1)), color-stop(50%, rgba(25,46,47,1)), color-stop(71%, rgba(32,67,63,1)), color-stop(71%, rgba(32,67,63,1)), color-stop(100%, rgba(35,71,71,1)));
+    background: -webkit-linear-gradient(top, rgba(15,29,29,1) 0%, rgba(25,46,47,1) 50%, rgba(32,67,63,1) 71%, rgba(32,67,63,1) 71%, rgba(35,71,71,1) 100%);
+    background: -o-linear-gradient(top, rgba(15,29,29,1) 0%, rgba(25,46,47,1) 50%, rgba(32,67,63,1) 71%, rgba(32,67,63,1) 71%, rgba(35,71,71,1) 100%);
+    background: -ms-linear-gradient(top, rgba(15,29,29,1) 0%, rgba(25,46,47,1) 50%, rgba(32,67,63,1) 71%, rgba(32,67,63,1) 71%, rgba(35,71,71,1) 100%);
+    background: linear-gradient(to bottom, rgba(15,29,29,1) 0%, rgba(25,46,47,1) 50%, rgba(32,67,63,1) 71%, rgba(32,67,63,1) 71%, rgba(35,71,71,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f1d1d', endColorstr='#234747', GradientType=0 );
+
+    background-repeat: no-repeat;
 }
 
 .wood1, .wood2, .wood3 {
@@ -24,7 +78,7 @@
 
 .wood2 {
     width: 30px;
-    height: 400px;
+    height: 380px;
     left: 15px;
 }
 
@@ -261,14 +315,14 @@
     position: absolute;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-bottom: 30px solid #fff;
+    border-bottom: 30px solid rgb(32, 46, 46);
 }
 
 .buttons {
     display: flex;
     flex-flow: row wrap;
     position: absolute;
-    top: 420px;
+    top: 395px;
     left: 10px;
     width: 330px;
 }
@@ -302,7 +356,7 @@
     position: absolute;
     background-image: linear-gradient(rgb(64, 236, 29), rgb(63, 139, 27));
     left: 242px;
-    top: 561px;
+    top: 536px;
     font-weight: 600;
     font-size: 0.8em;
     text-align: center;
@@ -323,7 +377,7 @@
     position: absolute;
     border-radius: 5px;
     background-image: linear-gradient(rgba(121, 205, 205, 0.219), rgba(0, 0, 0, 0.205));;
-    top: 380px;
+    top: 360px;
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
@@ -364,10 +418,125 @@
 }
 
 .dontLetter {
-    position: relative;
+    position: absolute;
     left: 70px;
-    top: 290px;
+    top: 325px;
     font-size: 1.3em;
     font-family: Arial, Helvetica, sans-serif;
-    color: red;
+    color: rgba(190, 190, 189, 0.74);
+}
+
+.leaf { 
+    width: 10px; height: 10px;
+    background-color: rgba(212, 214, 208, 0.575); 
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+  }
+ 
+ @-webkit-keyframes folhas{
+     from {
+        top: 150px;
+        opacity: 1;
+     }
+     to {
+        top: 400px;
+        opacity: 0;
+     }
+  }
+  
+  #folha div {
+     position: absolute;
+     top: -50px;
+     -webkit-animation-name: folha, folhas;
+     -webkit-animation-iteration-count: infinite;
+     -webkit-animation-direction: normal;
+     -webkit-animation-timing-function: ease-in;
+  }
+  .folhas {   
+     position: absolute;   
+  }
+  .folhas.f1 {
+     left: 80px;
+     -webkit-animation-duration: 5s;   
+  }
+  .folhas.f2 {
+     font-size: 1.8em;
+     left: 100px;
+     -webkit-animation-duration: 7s;   
+  } 
+  .folhas.f3 {
+    font-size: 1.8em;
+    left: 120px;
+    -webkit-animation-duration: 6s;   
+ } 
+ .folhas.f4 {
+    font-size: 1.8em;
+    left: 140px;
+    -webkit-animation-duration: 7s;   
+ } 
+ .folhas.f5 {
+    font-size: 1.8em;
+    left: 160px;
+    -webkit-animation-duration: 83s;   
+ } 
+ .folhas.f6 {
+    font-size: 1.8em;
+    left: 180px;
+    -webkit-animation-duration: 7s;   
+ } 
+ .folhas.f7 {
+    font-size: 1.8em;
+    left: 300px;
+    -webkit-animation-duration: 9s;   
+ } 
+ .folhas.f8 {
+    left: 180px;
+    -webkit-animation-duration: 5s;   
+ }
+ .folhas.f9 {
+    font-size: 1.8em;
+    left: 290px;
+    -webkit-animation-duration: 11s;   
+ } 
+ .folhas.f10 {
+   font-size: 1.8em;
+   left: 230px;
+   -webkit-animation-duration: 9s;   
+ } 
+ .folhas.f11 {
+   font-size: 1.8em;
+   left: 297px;
+   -webkit-animation-duration:11s;   
+ } 
+ .folhas.f12 {
+   font-size: 1.8em;
+   left: 295px;
+   -webkit-animation-duration: 13s;   
+ } 
+ .folhas.f13 {
+   font-size: 1.8em;
+   left: 285px;
+   -webkit-animation-duration: 14s;   
+ } 
+ .folhas.f14 {
+   font-size: 1.8em;
+   left: 305px;
+   -webkit-animation-duration: 15s;   
+ } 
+ .folhas.f15 {
+    font-size: 1.8em;
+    left: 123px;
+    -webkit-animation-duration: 8s;   
+  } 
+  .folhas.f16 {
+    font-size: 1.8em;
+    left: 120px;
+    -webkit-animation-duration: 12s;   
+  }
+
+@media (min-width: 768px) {
+    body {
+        height: 642px;
+    }
 }
