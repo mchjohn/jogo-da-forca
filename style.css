@@ -78,7 +78,7 @@ body {
 
 .wood2 {
     width: 30px;
-    height: 380px;
+    height: 370px;
     left: 15px;
 }
 
@@ -322,7 +322,7 @@ body {
     display: flex;
     flex-flow: row wrap;
     position: absolute;
-    top: 395px;
+    top: 385px;
     left: 10px;
     width: 330px;
 }
@@ -377,7 +377,7 @@ body {
     position: absolute;
     border-radius: 5px;
     background-image: linear-gradient(rgba(121, 205, 205, 0.219), rgba(0, 0, 0, 0.205));;
-    top: 360px;
+    top: 350px;
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
@@ -420,7 +420,7 @@ body {
 .dontLetter {
     position: absolute;
     left: 70px;
-    top: 325px;
+    top: 320px;
     font-size: 1.3em;
     font-family: Arial, Helvetica, sans-serif;
     color: rgba(190, 190, 189, 0.74);
